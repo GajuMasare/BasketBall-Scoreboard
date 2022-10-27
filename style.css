@@ -1,0 +1,116 @@
+@import url(scorefont.ttf);
+
+body{
+    background-image: url(backgrund.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+
+.container{
+    border-style:solid;
+    border-width: .2rem;
+    border-color: chocolate;
+    font-size: 2rem;
+    border-radius: 3rem;
+    background: #1B244A;
+    max-width: 40%;
+    color:white;
+    margin-top: 13%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    height: 17rem;
+
+}
+
+.sub-container{
+    z-index: 1;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.H-continer,.G-container{
+    width:30%;
+}
+
+.scoreAdd{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.HScore, .GScore{
+    border-radius: .6rem;
+    height: 5rem;
+    margin-top: 1rem;
+    background: #080001;
+    color: #F94F6D;
+}
+
+.Hscorefinal, .Gscorefinal{
+    font-family: 'Digital-7';
+    font-size: 5rem;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+}
+
+.scoreAdd{
+    justify-content: space-around;
+    color: #9AABD8;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 5%;
+    font-size: 1.5rem;
+    color:#9AABD8;
+    border:2px solid #9AABD8;
+    background-color: transparent;
+}
+
+button:hover{
+    background-color: #9AABD8;
+    color:#1B244A;
+
+}
+
+button:active{
+    background-color: orange;
+}
+
+.clearbtn{
+    margin-top: 1rem;
+}
+
+.heart{
+    z-index: -1;
+    position: fixed;
+    top: -1vh;
+    font-size: 2rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform: translateY(105vh);
+    }
+}
+
+footer{
+    position: fixed;
+    text-align: right;
+    padding: 2rem;
+    bottom: 0;
+    right: 1rem;
+    width: 100%;
+    color: white; 
+}
